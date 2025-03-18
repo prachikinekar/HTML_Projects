@@ -4,37 +4,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Index Page</title>
+    <style>
+        .table {
+            /* height:100%;
+            width:100%; */
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            border-collapse:collapse;
+            scroll-behavior:smooth;
+        }
+
+        /* first row css */
+        .first-row {
+            height: 70px;
+
+
+        }
+
+        .first-row-th {
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: #a1d4f5;
+            font-size: 30px;
+        }
+
+        /* second row */
+        .second-row {
+            height:400px;
+            text-align: center;
+        }
+
+        .second-row-td-one {
+            /* height: 500px; */
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: #a8adf4;
+        }
+
+        /* third row */
+        .third-row {
+            height: 400px;
+            text-align: center;
+        }
+
+        .third-row-td-one {
+            /* height: 500px; */
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: #FFB8E0;
+        }
+
+        /* fourth row */
+        .fourth-row {
+            height: 800px;
+            text-align: center;
+        }
+
+        .fourth-row-td-one {
+            /* height: 500px; */
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: #eab8ce;
+        }
+
+        .fifth-row {
+            height: 400px;
+            text-align: center;
+        }
+
+        .fifth-row-td-one {
+
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: bisque;
+        }
+
+        .table-two {
+            /* border-style: solid;
+            border-color: black;
+            border-width: 2px; */
+           height: 100px;
+           width: 100%;
+            /* border-collapse: collapse; */
+        }
+
+        .tbl-two-row-one {
+            /* border-style: solid;
+            border-color: black;
+            border-width: 2px; */
+        }
+
+        .tbl-data {
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>My Projects</h1>
-    1.<a href="top-influencers.html" target="_blank">Top Influencers</a>
-    <br>
-    2.<a href="resume.html"target="_blank">Resume</a>
-    <br>
-    3.<a href="registration.html"target="_blank">Registration Form</a>
-    <br>
-    4.<a href="form.html"target="_blank">Form</a>
-    <br>
-    5.<a href="cpu-components.html"target="_blank">CPU Components</a>
-    <br>
-    6.<a href="reportcard.html"target="_blank">Report Card</a>
-    <br>
-    7.<a href="student-data.html"target="_blank">Student Data</a>
-    <br>
-    8.<a href="table-layout.html"target="_blank">Table Layout</a>
-    <br>
-    9.<a href="youtube-page.html"target="_blank">Youtube page</a>
-    <br>
-    10.<a href="calculator.html" target="_blank">Calculator</a>
-    <br>
-    11.<a href="tbl-indexpage.html" target="_blank">IndexPage</a>
-    <br>
-    12.<a href="homepage.html" target="_blank">Homepage</a>
-    <br>
-    13.<a href="card.html" target="_blank">Card</a>
-   
+    <table class="table">
+        <!-- first row -->
+        <tr class="first-row">
+            <th class="first-row-th"><a href="#home">HOME</a></th>
+            <th class="first-row-th"><a href="#about">ABOUT</a></th>
+            <th class="first-row-th"><a href="#projects">PROJECTS</a></th>
+            <th class="first-row-th"><a href="#contact">CONTACT</a></th>
+        </tr>
+        <!-- second row -->
+        <tr class="second-row">
+            <td id="#home" colspan="4" class="second-row-td-one">
+                <br>
+                <h2>Hi,I'm Prachi Kinekar</h2>
+                <p>A Full-Stack Developer</p>
+            </td>
+
+
+        </tr>
+        <!-- third row -->
+        <tr class="third-row">
+            <td id="about" colspan="4" class="third-row-td-one">
+                <h1>About me:</h1>
+                <p>I am an enthusiastic Full Stack Developer in the making, eager to learn and grow in web development.
+                    Currently exploring technologies like HTML, CSS, JavaScript, React, and Node.js to build dynamic
+                    applications. I enjoy solving coding challenges and improving my problem-solving skills. Passionate
+                    about creating user-friendly and efficient web solutions.</p>
+            </td>
+
+        </tr>
+        <!-- fourth row -->
+        <tr class="fourth-row">
+
+        <td id="projects" colspan="4" class="fourth-row-td-one">
+            <h1>Projects:</h1>
+
+                <table class="table-two">
+
+                    <!-- row one -->
+                    <tr class="tbl-two-row-one">
+                        <td class="tbl-data">
+                            <img src="https://thumbs.dreamstime.com/b/calculator-icon-vector-isolated-white-background-your-web-mobile-app-design-calculator-logo-concept-calculator-icon-134617239.jpg?w=768"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./calculator.html">Calculator</a>
+                        </td>
+                        <td class="tbl-data">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3aCxKNOGqcSD-OfSqMSw-XOZDfVEouITWw&s" height="200px" width="100%">
+                            <br>
+                            <a href="./gandhiji.html">Gandhiji</a>
+                        </td>
+                        <td class="tbl-data">
+                            <img src="https://www.shutterstock.com/image-vector/computer-part-solid-icons-vector-260nw-1504427066.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./cpu-components.html">CPU-Components</a>
+                        </td>
+                        <td class="tbl-data">
+                            <img src="https://png.pngtree.com/png-vector/20190512/ourmid/pngtree-vector-report-icon-png-image_1032685.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./reportcard.html">Report Card</a>
+                        </td>
+                    </tr>
+                    <!-- row two -->
+                    <tr class="tbl-two-row-one">
+                        <td class="tbl-data">
+                            <img src="https://img.freepik.com/premium-photo/youtube-logo-icon-modern-3d-style_485374-28912.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./youtube-page.html">Youtube Page</a>
+                        </td>
+                        <td class="tbl-data">
+                            <img src="https://www.shutterstock.com/image-vector/resume-icon-vector-illustration-graphic-600nw-2507727413.jpg"
+                                height="200px" width="100%">
+                            <a href="./form.html">Html Form</a>
+                        </td>
+                        <td class="tbl-data">
+                            <img src="https://t4.ftcdn.net/jpg/05/32/88/17/360_F_532881763_MPtPne1eAgNJUyKfwDvSgtzxmssz5iiN.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./resume.html">Resume</a>
+                        </td>
+                        <td class="tbl-data">
+                            <img src="https://www.shutterstock.com/image-vector/registration-form-register-vector-icon-260nw-1019372971.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./registration.html">Registration form</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-data">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0PXeO06_pH-DXHpPpa2nbAQVU1NYXUrV1vw&s"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./card.html">Card</a>
+                        </td>
+                        <td class="tbl-data">
+                            <img src="https://static.vecteezy.com/system/resources/previews/033/712/801/non_2x/account-info-profile-card-personal-data-icon-vector.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./profile-card.html"> Profile Card</a>
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+
+            </td>
+
+        </tr>
+        <!-- fifth row -->
+        <tr class="fifth-row">
+            <td id="contact" colspan="4" class="fifth-row-td-one">
+                <h1>Contact:</h1>
+                <b>Phone:</b><a href="tel:8766079061">8766079061</a><br>
+                <b>Email:</b><a href="mailto:prachikinekar1214@gmail.com">prachikinekar1214@gmail.com</a><br>
+                <b>Location:</b>Katol<br />
+                <b>GitHub:</b><a href="https://github.com/prachikinekar/HTML_Projects">Github Profile</a><br>
+                <b>LinkedIn:</b><a href="https://www.linkedin.com/in/prachi-kinekar-9b7b06259">LinkedIn
+                    Profile</a><br />
+                <b>Skype:</b>Available
+
+
+            </td>
+
+        </tr>
+    </table>
 </body>
 
 </html>

@@ -4,16 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://icons.veryicon.com/png/o/miscellaneous/two-color-webpage-small-icon/home-page-161.png">
     <style>
+        body {
+            height:100vh;
+            width:100vw;
+            margin:0px;
+            padding:0px;
+          
+        }
+
         .table {
-            /* height:100%;
-            width:100%; */
-            border-style: solid;
+            height: 100%;
+            width: 100%;
+             border-style: solid;
             border-color: black;
             border-width: 2px;
-            border-collapse:collapse;
-            scroll-behavior:smooth;
+            border-collapse: collapse;
+            scroll-behavior: smooth;
+            
         }
 
         /* first row css */
@@ -33,7 +43,7 @@
 
         /* second row */
         .second-row {
-            height:400px;
+            height: 400px;
             text-align: center;
         }
 
@@ -52,7 +62,7 @@
         }
 
         .third-row-td-one {
-            /* height: 500px; */
+            
             border-style: solid;
             border-color: black;
             border-width: 2px;
@@ -66,7 +76,7 @@
         }
 
         .fourth-row-td-one {
-            /* height: 500px; */
+        
             border-style: solid;
             border-color: black;
             border-width: 2px;
@@ -87,29 +97,24 @@
         }
 
         .table-two {
-            /* border-style: solid;
-            border-color: black;
-            border-width: 2px; */
-           height: 100px;
-           width: 100%;
-            /* border-collapse: collapse; */
-        }
 
-        .tbl-two-row-one {
-            /* border-style: solid;
-            border-color: black;
-            border-width: 2px; */
+            height: 100px;
+            width: 100%;
+            border-collapse: collapse;
+
+
         }
 
         .tbl-data {
-            border-style: solid;
-            border-color: black;
+
             border-width: 2px;
+
         }
     </style>
 </head>
 
 <body>
+    <!-- table start -->
     <table class="table">
         <!-- first row -->
         <tr class="first-row">
@@ -125,8 +130,6 @@
                 <h2>Hi,I'm Prachi Kinekar</h2>
                 <p>A Full-Stack Developer</p>
             </td>
-
-
         </tr>
         <!-- third row -->
         <tr class="third-row">
@@ -142,9 +145,9 @@
         <!-- fourth row -->
         <tr class="fourth-row">
 
-        <td id="projects" colspan="4" class="fourth-row-td-one">
-            <h1>Projects:</h1>
-
+            <td id="projects" colspan="4" class="fourth-row-td-one">
+                <h1>Projects:</h1>
+                <!-- table two -->
                 <table class="table-two">
 
                     <!-- row one -->
@@ -156,7 +159,8 @@
                             <a href="./calculator.html">Calculator</a>
                         </td>
                         <td class="tbl-data">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3aCxKNOGqcSD-OfSqMSw-XOZDfVEouITWw&s" height="200px" width="100%">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3aCxKNOGqcSD-OfSqMSw-XOZDfVEouITWw&s"
+                                height="200px" width="100%">
                             <br>
                             <a href="./gandhiji.html">Gandhiji</a>
                         </td>
@@ -199,6 +203,7 @@
                             <a href="./registration.html">Registration form</a>
                         </td>
                     </tr>
+                    <!-- row three -->
                     <tr>
                         <td class="tbl-data">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0PXeO06_pH-DXHpPpa2nbAQVU1NYXUrV1vw&s"
@@ -224,6 +229,14 @@
                             <br>
                             <a href="./product-card.html">Product-Card</a>
                         </td>
+<tr class="tbl-two-row-one">
+    <td class="tbl-data">
+        <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/ECO-website-mockup.jpg?w=1250&h=1120&crop=1"
+            height="200px" width="100%">
+        <br>
+        <a href="./webpage.html">webpage</a>
+    </td>
+</tr>
                     </tr>
 
 

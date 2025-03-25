@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* main-container css */
+        .main-container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        /* header css */
+        .header {
+            width: 100%;
+            height: 5%;
+            display: grid;
+            grid-column: 1/span 2;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* logo css */
+        .logo {
+            height: 100%;
+            width: 100%;
+            margin-left: 20px;
+        }
+
+        /* header-links css */
+        .header-links {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            font-family: cursive;
+            color: burlywood;
+
+        }
+
+        span {
+            font-size: 25px;
+
+
+        }
+
+        /* box two css */
+        .box-two {
+            width: 100%;
+            height: 250px;
+            color: rgb(1, 1, 1);
+            font-size: 40px;
+            padding: 20px;
+            text-align: center;
+            font-family: serif;
+
+
+        }
+
+        /* box three css */
+        .box-three {
+            width: 100%;
+            height: 600px;
+            grid-row: 2/span 4;
+            grid-column: 2;
+            text-align: center;
+
+        }
+
+        .image {
+            height: 90%;
+            width: 80%;
+            border-radius: 15%;
+
+
+        }
+
+        /* box four css */
+        .box-four {
+            width: 100%;
+            height: 310px;
+            text-align: left;
+            margin: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+        }
+
+        /* box-five css */
+        .box-five {
+            width: 100%;
+            height: 500px;
+            grid-column: 1/span 2;
+            display: grid;
+            row-gap: 5px;
+            column-gap: 15px;
+            text-align: center;
+            margin-left: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        /* card css */
+        .card {
+            height: 350px;
+            width: 90%;
+            background-color: rgb(214, 205, 212);
+            border-radius: 35px;
+            margin: 20px;
+            padding: 10px;
+        }
+        .two{
+            margin-top:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- start header  -->
+        <div class="header">
+            <!-- logo -->
+            <div class="logo">
+                <img class="one"
+                    src="data:image/png;base64,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"
+                    height="60px" width="100px" alt="nykaa iamge">
+            </div>
+            <!-- header-links -->
+            <div class="header-links">
+                <span>Home</span>
+                <span>Products</span>
+                <span>About</span>
+                <span>Contact</span>
+            </div>
+            <!-- end header -->
+            <!-- box-two -->
+            <div class="box-two">
+                <h3>Welcome to NYKAA</h3>
+            </div>
+            <!-- box-three -->
+            <div class="box-three"><img class="image"
+                    src="https://i.pinimg.com/736x/c6/5a/45/c65a45ee248838167f00a18920e9fff2.jpg" alt=""></div>
+            <!-- box-four -->
+            <div class="box-four">
+                <p>Beauty products encompass a wide range of items used for personal care and enhancement, including
+                    skincare, makeup, hair care, and body care products, all aimed at improving appearance and boosting
+                    self-esteem.Cosmetics are composed of mixtures of chemical compounds derived from either natural
+                    sources or
+                    synthetically created ones.Cosmetics have various purposes, including personal and skin care. They
+                    can also be used to conceal blemishes and enhance natural features (such as the eyebrows and
+                    eyelashes). Makeup can also add colour to a person's face, enhance a person's features or change the
+                    appearance of the face entirely to resemble a different person, creature, or object
+                </p>
+            </div>
+            <!-- box-five -->
+            <h1 style="text-align: center;">Beauty Products</h1>
+            <div class="box-five">
+
+
+                <div class="card">
+                    <img class="two" src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/a/2aa71cbNYCETA0000010_1.jpg"
+                        height="50%" width="60%">
+                    <p>Cetaphil Gentle Skin Cleanser
+                    </p>
+                    <h3>MRP: ₹399</h3>
+
+                </div>
+
+                <div class="card">
+                    <img class="two" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSE9rVfAaZpdNatgvCj9a0VQR85Q9nMkHOFtNta7FGNPC8zeJGHpNqpKuu17q5EDNYUtUlnl9-2tomqy_j1rtnnpHu7g5XpCSA92mj4Brwtg1iS_YSyWlV-1g&usqp=CAE"
+                        height="50%" width="60%" alt="">
+                    <p>The Derma Co 10% Niacinamide Serum</p>
+                    <h3> MRP:₹144 </h3>
+                </div>
+                <div class="card">
+                    <img class="two" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSjcJzDavyEZgDbPZCcmPK9wOCJlsMxOlSJ--pUIuEFLveGWbdAWXm7A1xIssSp_ZpsjKDpaa8E5dvdooXCoQBpCNXaBAfqeecSmi04xzdNQorzqfKfbMBGNQ&usqp=CAE"
+                        height="50%" width="60%" alt="">
+                    <p>Plum 10% Niacinamide Face Serum With Rice Water </p>
+                    <h3>MRP:₹334</h3>
+                </div>
+                <div class="card">
+                    <img class="two" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQjVwcBP6EcEPWqKApLRl6aFwSOI-MH1WxXA_kA5yXGWrEY06UcN0EaAht9lYof7AXyrZkx5yulhyKjMUsDLf70nnqKkEshM8JCM1ZgO_l_jkmG_hV-bxjW&usqp=CAE"
+                        height="50%" width="60%" alt="">
+                    <p>LOREAL PARIS Glycolic Bright Daily Foaming Face Cleanser - 100ml</p>
+                    <h3>MRP:₹329</h3>
+                </div>
+                <div class="card">
+                    <img class="two" src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/1/b13841cFORES00000584.jpg"
+                        height="50%" width="60%" alt="">
+                    <p>Forest Essentials Samsara Miraculous Glow Booster Anti-Ageing Day Serum</p>
+                    <h3>MRP:₹2550</h3>
+                </div>
+                <div class="card">
+                    <img class="two" src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/d/cdd8c3bDOTKE00000308_1.jpg"
+                        height="50%" width="60%" alt="">
+                    <p>Dot & Key Vitamin C + E Super Bright Gel Face Wash</p>
+                    <h3>MRP:₹224
+                    </h3>
+                </div>
+                <div class="card">
+                    <img class="two" src="https://images-static.nykaa.com/media/catalog/product/3/f/3f2d612PLUMX00000672_1.jpg?tr=w-344,h-344,cm-pad_resize"
+                        height="50%" width="60%" alt="">
+                    <p>Plum Green Tea Pore Cleansing Gel Face Wash With Glycolic Acid - Fights Acne & Oil For Clear Skin
+                    </p>
+                    <h3>MRP:₹248</h3>
+                </div>
+                <div class="card">
+                    <img class="two" src="https://images-static.nykaa.com/media/catalog/product/2/a/2aa71cbCETAP00000005_1.jpg?tr=w-344,h-344,cm-pad_resize"
+                        height="50%" width="60%" alt="">
+                    <p>Cetaphil Brightening Radiance Creamy Cleanser</p>
+                    <h3>MRP:₹743</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

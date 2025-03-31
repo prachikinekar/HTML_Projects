@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to right,
+                    skyblue,
+                    rgb(247, 91, 247));
+        }
+
+        /* main-container css */
+        .main-container {
+            height: 80%;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        /* heading css*/
+        .heading {
+            height: 15%;
+            width: 100%;
+            display: grid;
+            margin-left: 20px;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        /* form-body css*/
+        .form-body {
+            height: 65%;
+            width: 100%;
+            /* background-color: yellow; */
+
+        }
+
+        /* label css */
+        .label-one {
+            margin-left: 30px;
+        }
+
+        .label-two {
+            margin-left: 225px;
+        }
+
+        .label-three {
+            margin-left: 30px;
+        }
+
+        .label-four {
+            margin-left: 255px;
+        }
+
+        .label-five {
+            margin-left: 30px;
+        }
+
+        .label-six {
+            margin-left: 235px;
+        }
+
+        .label-seven {
+            margin-left: 30px;
+        }
+
+        /* input css */
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"],
+        input[type="email"],
+        input[type="phone"],
+        input[type="password"] {
+            height: 30px;
+            width: 260px;
+            margin-left: 30px;
+          
+
+        }
+
+        input[type="radio"] {
+            margin-left:30px;
+        }
+
+        /* button css*/
+        .button {
+            height: 20%;
+            width: 100%;
+
+
+        }
+
+        button {
+            height:40px;
+            width:550px;
+            margin:25px;
+            margin-left: 40px;
+            border-radius: 10px;
+            background: linear-gradient(to right,
+                    skyblue,
+                    rgb(247, 91, 247));
+            
+            font-size: 20px;
+        }
+
+        button:hover {
+            color: rgb(231, 250, 59);
+            background:rgb(4, 98, 42);
+        }
+    </style>
+</head>
+
+<body>
+    <!--main-container  -->
+    <div class="main-container">
+
+        <!--heading  -->
+        <div class="heading">
+            <h1><u>R</u>egistration</h1>
+
+
+        </div>
+
+
+        <!-- form-body start-->
+        <div class="form-body">
+
+            <!-- form -->
+            <form>
+
+                <label class="label-one" for="fullname">Full Name:</label>
+                <label class="label-two" for="username">Username:</label>
+                <br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
+                <input type="text"id="username" name="username" placeholder="Enter your username">
+                <br>
+                <br>
+                <br>
+
+                <label class="label-three" for="email">Email:</label>
+                <label class="label-four" for="phone no">Phone no:</label>
+                <br>
+                <input type="email" placeholder="Enter your email">
+                <input type="phone" placeholder="Enter your phone no">
+                <br>
+                <br>
+                <br>
+
+                <label class="label-five" for="password">Password:</label>
+                <label class="label-six" for="password">Confirm Password:</label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <br>
+                <br>
+                <br>
+                
+                <label class="label-seven" for="gender">Gender:</label>
+                <br>
+                <input type="radio"id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio"id="female"  name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio"id="prefer not to say"  name="gender" value="prefer not to say">
+                <label for="prefer not to say">Prefer not to say</label>
+
+            </form>
+        </div>
+        <!-- end form body -->
+
+        <!-- button  -->
+        <div class="button">
+            <button>Register</button>
+        </div>
+    </div>
+</body>
+
+</html>

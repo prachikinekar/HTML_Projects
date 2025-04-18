@@ -5,42 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="icon" href="https://media.istockphoto.com/id/1312128591/vector/home-icon-vector-house-sign.jpg?s=612x612&w=0&k=20&c=jxUT546g8Cfgv1SiAfh2Eos46XI3DqYvPLhxGFaobpE=">
+    <link rel="icon"
+        href="https://media.istockphoto.com/id/1312128591/vector/home-icon-vector-house-sign.jpg?s=612x612&w=0&k=20&c=jxUT546g8Cfgv1SiAfh2Eos46XI3DqYvPLhxGFaobpE=">
 
     <style>
         body {
-            height:100vh;
-            width:100vw;
-            margin:0px;
-            padding:0px;
-          
+            height: 100vh;
+            width: 100vw;
+            margin: 0px;
+            padding: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* background-image: url(https://t3.ftcdn.net/jpg/03/39/06/02/360_F_339060225_w8ob8LjMJzPdEqD9UFxbE6ibcKx8dFrP.jpg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: cadetblue;
+
+
         }
 
         .table {
             height: 100%;
             width: 100%;
-             /* border-style: solid;
-            border-color: black;
-            border-width: 2px;
-            border-collapse: collapse; */
             scroll-behavior: smooth;
             display: grid;
-            
+
         }
 
         /* first row css */
         .first-row {
             height: 70px;
+            /* border: 2px solid black; */
 
 
         }
 
         .first-row-th {
-            /* border-style: solid;
-            border-color: black;
-            border-width: 2px; */
-            background-color: #a1d4f5;
+
             font-size: 30px;
+            /* border: 2px solid black; */
         }
 
         /* second row */
@@ -50,11 +52,17 @@
         }
 
         .second-row-td-one {
-            /* height: 500px; */
-            /* border-style: solid;
-            border-color: black;
-            border-width: 2px; */
-            background-color: #a8adf4;
+            /* border: 2px solid black; */
+        }
+
+        .second-row-td-two {
+            /* border: 2px solid black; */
+            margin: 20px;
+        }
+
+        .img-one {
+            border-radius: 100%;
+
         }
 
         /* third row */
@@ -63,13 +71,7 @@
             text-align: center;
         }
 
-        .third-row-td-one {
-            
-            /* border-style: solid;
-            border-color: black;
-            border-width: 2px; */
-            background-color: #FFB8E0;
-        }
+        .third-row-td-one {}
 
         /* fourth row */
         .fourth-row {
@@ -77,26 +79,14 @@
             text-align: center;
         }
 
-        .fourth-row-td-one {
-        
-            /* border-style: solid;
-            border-color: black;
-            border-width: 2px; */
-            background-color: #eab8ce;
-        }
+        .fourth-row-td-one {}
 
         .fifth-row {
             height: 400px;
             text-align: center;
         }
 
-        .fifth-row-td-one {
-
-            /* border-style: solid;
-            border-color: black;
-            border-width: 2px; */
-            background-color: bisque;
-        }
+        .fifth-row-td-one {}
 
         .table-two {
 
@@ -127,10 +117,13 @@
         </tr>
         <!-- second row -->
         <tr class="second-row">
-            <td id="#home" colspan="4" class="second-row-td-one">
+            <td id="#home" colspan="2" class="second-row-td-one">
                 <br>
-                <h2>Hi,I'm Prachi Kinekar</h2>
+                <h2 style="color: purple;">Hi,I'm Prachi Kinekar</h2>
                 <p>A Full-Stack Developer</p>
+            </td>
+            <td id="#image" colspan="2" class="second-row-td-two">
+                <img class="img-one" src="./assets/images/prachi.jpeg" height="300px" width="300px" alt="">
             </td>
         </tr>
         <!-- third row -->
@@ -231,31 +224,30 @@
                             <br>
                             <a href="./product-card.html">Product-Card</a>
                         </td>
-<tr class="tbl-two-row-one">
-    <td class="tbl-data">
-        <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/ECO-website-mockup.jpg?w=1250&h=1120&crop=1"
-            height="200px" width="100%">
-        <br>
-        <a href="./webpage.html">webpage</a>
-    </td>
+                    <tr class="tbl-two-row-one">
+                        <td class="tbl-data">
+                            <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/ECO-website-mockup.jpg?w=1250&h=1120&crop=1"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./webpage.html">webpage</a>
+                        </td>
 
-    <td class="tbl-data">
-        <img src="https://static.vecteezy.com/system/resources/previews/035/727/676/non_2x/3d-account-login-and-password-form-user-authorization-login-authentication-page-sign-up-concept-login-page-with-pencil-3d-rendering-illustration-vector.jpg"
-            height="200px" width="100%">
-        <br>
-        <a href="./grid-registration.html">Registration form using grid</a>
-    </td>
-</tr>
+                        <td class="tbl-data">
+                            <img src="https://static.vecteezy.com/system/resources/previews/035/727/676/non_2x/3d-account-login-and-password-form-user-authorization-login-authentication-page-sign-up-concept-login-page-with-pencil-3d-rendering-illustration-vector.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./grid-registration.html">Registration form using grid</a>
+                        </td>
 
-
-
-
-
-
+                        <td class="tbl-data">
+                            <img src="https://www.shutterstock.com/image-illustration/input-output-two-arrows-right-260nw-2305319445.jpg"
+                                height="200px" width="100%">
+                            <br>
+                            <a href="./inputoutput.html">I/p & O/p of Programming Langauages </a>
+                        </td>
+                    </tr>
                 </table>
-
             </td>
-
         </tr>
         <!-- fifth row -->
         <tr class="fifth-row">
